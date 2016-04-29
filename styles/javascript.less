@@ -1,0 +1,42 @@
+@import 'syntax-variables';
+
+.source.js, .source.jsx {
+  .constant {
+    color: @green;
+
+    &.object.key {
+      .string {
+        color: @bright-green;
+      }
+
+      .key-value {
+        color: @orange;
+      }
+    }
+  }
+
+  .storage {
+    &.function.arrow {
+      color: @orange;
+    }
+  }
+
+  .variable{
+    &.this {
+      color: #a55;
+    }
+
+    &.other.object {
+      color: #a55;
+    }
+  }
+
+  .property.variable {
+    color: lighten(@red, 2%);
+  }
+
+  .entity.name.tag {
+    text-decoration: none;
+  }
+
+}
