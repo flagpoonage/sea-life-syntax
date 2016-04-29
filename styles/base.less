@@ -19,6 +19,7 @@ atom-text-editor, :host {
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
+    min-width: 0;
 
     .line-number {
       &.cursor-line {
@@ -221,7 +222,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.name.tag {
     color: @red;
-    text-decoration: underline;
   }
 
   &.other.attribute-name {
@@ -309,7 +309,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
 :host .scroll-view {
   padding-left: 8px;
-  padding-top: 8px;
 }
 
 atom-text-editor[mini] .scroll-view,
