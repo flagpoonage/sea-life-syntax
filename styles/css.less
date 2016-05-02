@@ -4,7 +4,7 @@
 .source.css,
 .source.scss,
 .source.postcss {
-  color: @red;
+  color: @blue;
 
   .at-rule {
     &.import {
@@ -16,6 +16,10 @@
         color: @green;
       }
     }
+  }
+
+  .include {
+    color: @purple;
   }
 
   .variable {
@@ -32,6 +36,10 @@
 
   .keyword.control {
     color: @red;
+
+    &.include {
+      color: @purple;
+    }
   }
 
   .punctuation.separator {
@@ -47,7 +55,7 @@
     font-weight: bold;
 
     .punctuation.separator {
-      color: @red;
+      color: @orange-dark;
     }
   }
 
@@ -57,12 +65,8 @@
   }
 
   .entity.other.id {
-    color: @red;
+    color: @orange-dark;
     font-style: italic;
-
-    .punctuation.definition {
-      color: @orange;
-    }
   }
 
   .definition.variable {
@@ -71,14 +75,10 @@
 
   .attribute-selector .operator {
     color: white;
-    font-size: 0.9em;
-    vertical-align: middle;
   }
 
   .attribute-name.attribute {
     color: @green;
-    padding: 0 5px;
-    vertical-align: middle;
   }
 
   .attribute-name.parent-selector {
@@ -87,8 +87,6 @@
 
   .attribute-value {
     color: @bright-green;
-    padding: 0 5px;
-    vertical-align: middle;
   }
 
   .meta.attribute-selector {
