@@ -1,0 +1,32 @@
+@import 'syntax-variables';
+
+.source.jsx {
+
+  .entity.name.tag.open,
+  .entity.name.tag.close, {
+    color: @cyan;
+  }
+
+  .entity.other.attribute-name {
+    color: @blue;
+  }
+
+  .punctuation.embedded.begin,
+  .punctuation.embedded.end, {
+    color: @bright-green;
+  }
+
+  .embedded.expression {
+    .variable.readwrite {
+      color: @orange-dark;
+    }
+
+    .variable.other.object {
+      color: @orange-dark;
+    }
+
+    .variable.property {
+      color: @orange;
+    }
+  }
+}
