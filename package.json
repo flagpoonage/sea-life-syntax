@@ -2,12 +2,13 @@
   "name": "sea-life-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A blueish syntax theme for use with the Sea Life UI theme",
   "keywords": [
+    "sea-life",
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/sea-life-syntax",
+  "repository": "https://github.com/flagpoonage/sea-life-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
